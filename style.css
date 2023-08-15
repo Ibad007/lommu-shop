@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,61 +6,88 @@
 
 @font-face {
     font-family: Circular-std;
-    src: url(fonts/CircularStd-Black.ttf);
-    font-weight: 100;
-}
-@font-face {
-    font-family: Circular-std;
-    src: url(fonts/CircularStd-BlackItalic.ttf);
-    font-weight: 200;
-}
-@font-face {
-    font-family: Circular-std;
-    src: url(fonts/CircularStd-Bold.ttf);
-    font-weight: 300;
-}
-@font-face {
-    font-family: Circular-std;
     src: url(fonts/CircularStd-Medium.ttf);
     font-weight: 400;
 }
 
+header {
+    width: 100%;
+    height: 100%;
+    background-color: #311b92;
 
-.navbar{
+}
+
+.nav-bar {
     display: flex;
     align-items: center;
-    padding: 1rem;
-    background-color:#311b92;
+    position: sticky;
     justify-content: space-between;
+        
 }
-nav ul li a{
+
+.nav-list {
+    display: flex;
+    align-items: center;  
+    
+}
+
+ul li ul li{
+    display: none;
+    padding: 12px;
+    position: relative;
+    text-align: center;
+}
+ul li:hover ul li{
+    display: block;
+}
+.nav-list li {
+    list-style-type: none;
+}
+
+.nav-list li a {
     text-decoration: none;
     color: white;
-    font-family: circular-std;
+    padding: 12px ;
+    font-family: Circular-std ;
     font-weight: 400;
+    font-size: 14px;
+    
 }
-nav{
-    margin-left: 20rem;
+.fa-solid{
+    color: white;
+    font-size: 12px;
+
 }
-nav ul{
-    list-style-type: none;
-    display: inline-block;
+#1{
+    position: relative;
 }
-nav ul li{
-    display: inline-block;
-    margin: 1rem;
+
+.logo img {
+    width: 152px;
+     padding:1rem;
+     margin: 10px;
 }
 .btn button{
-    background-color:white;
-    
-    width: 10rem;
+    background-color: white;
+    width: 120px;
+    font-size: 12px;
+    font-family: Circular-std ;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(20, 19, 19);
+    border-radius: .25rem;
     height: 2rem;
-    border-radius:.5rem ;
+    margin: 10px;
 }
-.buttn button{
-    background-color: #a1dc00;
-  
-    width: 5rem;
-    height: 30px;
-    border-radius: .5rem;
+.btn1{
+    background-color:#aae900;
+    width: 55px;
+    height: 1.5rem;
+    border-radius:3px;
+    text-align: center;
+    padding: .25rem;
+    font-size: 12px;
+    font-family: Circular-std ;
+    font-weight: 400;
+     margin: 10px;
 }

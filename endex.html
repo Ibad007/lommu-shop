@@ -6,26 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lommu shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="img.png" width="125px">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="">Unduh LummoSHOP</a></li>
-                <li><a href="">Upgrade LummoSHOP</a></li>
-                <li><a href="">Layanan</a></li>
-                <li><a href="">Jelajahi</a></li>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo"><img src="img.png" alt="img"></div>
+            <ul class="nav-list">
+                <li><a href="#">Unduh LummoSHOP</a></li>
+                <li><a href="#">Upgrade LummoSHOP</a></li>
+                <li><a href="#">Layanan</a><i class="fa-solid fa-chevron-down"></i>
+                    <!-- absolute -->
+                    <ul>
+                        <li><a href="#">Toko Online</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Pembayaran</a></li>
+                        <li><a href="#">Domain</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Layanan</a><i class="fa-solid fa-chevron-down"></i></li>
+                <div class="btn"><button>Buat Jadwal Demo</button></div>
+                <div class="btn1">
+                    <button1>login</button1>
+                </div>
             </ul>
-        </nav>
-        <div class="btn"><button>Buat Jadwal Demo</button>
-            <span class="buttn"><button>login</button></span>
-        </div>
+            <!-- <a href="#" class="nav-toggle-hover"><i class="fa-solid fa-bars"></i></a> -->
+            </div>
+    </header>
 
-    </div>
 </body>
 
 </html>
